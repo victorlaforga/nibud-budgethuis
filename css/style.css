@@ -1,0 +1,151 @@
+h1, h2, h3, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #01216A
+}
+h3 {
+    font-size: 20px;
+}
+.welkom {
+    height: 103.5vh;
+    background-color: #00B289;
+    
+}
+.welkomTekst {
+    justify-content: left;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -180px;
+}
+
+.welkomTekst h1 {
+    font-size: 120px;
+    margin-bottom: -20px;
+}
+.welkomTekst p {
+    font-size:20px;
+}
+header img {
+width: 150px;
+}
+.image {
+    height: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/person\ writing.jpg');
+}
+img {
+    width: 100%;
+    height: 50%;
+}
+header {
+    display: flex;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: -10px;
+
+}
+
+.container {
+    width: 75%;
+    margin-top: -64px;
+    height: 103vh;
+}
+
+.container h2 {
+    font-size: 40px;
+}
+
+.woningen {
+    display: flex;
+    flex-direction: row;
+}
+
+.woningen p {
+    max-width: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+svg {
+    margin-right: 50px;
+}
+.container:nth-child(2) input {
+    border-color: #01216A;
+    border-radius: 3px;
+    height: 25px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+}
+.container input:nth-child(4) {
+    border-color: #01216A;
+    border-radius: 3px;
+    height: 30px;
+    width: 50px;
+    
+}
+
+.currencyinput {
+    color: #01216A;
+    font-size: 35px;
+    margin-bottom: 15px;
+    
+}
+
+input[type=text], input[type=number]  {
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #01216A;
+    border-color: #01216A;
+    border-radius: 3px;
+    height: 25px;
+}
+
+.intro {
+    width: 50%;
+}
+
+.inputenvragen {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vragen {
+    width: 46%;
+    display: block;
+}
+
+.vragen:nth-child(1) input {
+    width: 50px;
+}
+
+.verzekeringen {
+    width: 50%;
+    
+}
+.verzekeringen input {
+    width: 50px;
+}
+.containerverzekeringen {
+    display: flex;
+}
+
+.verzekeringen p:nth-child(2) {
+    font-size: 20px;
+}
+
+.inputenvragen .vragen:nth-child(2) {
+    margin-left: 4%;
+}
+
+.inputenvragen .vragen:nth-child(4) {
+    margin-left: 4%;
+}
