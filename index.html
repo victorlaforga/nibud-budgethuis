@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/slider.js"></script>
   <title>Nibud</title>
 </head>
 
@@ -78,15 +79,17 @@
       </div>
       <div class="vragen">
           <h3>Wat is uw maandelijks inkomen als huishouden?</h3>
-          <span class="currencyinput">€<input type="text" name="inkomen"></span>
+          <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span><button id="knopmaandelijksinkomen">GO</button>
       </div>
       <div class="vragen">
-        <h3>Wat is de maandelijkse huur van het huis?</h3>
-        <span class="currencyinput">€<input type="text" name="huur"></span>
+        <h3>Wat zijn de maandelijkse kosten voor het huis?</h3>
+        <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span><button id="knopmaandelijksekosten">GO</button>
        
 
     </div>
+    
   </div>
+  <h3 id="verschil"></h3>
 </div>
 <div class="container">
     <div class="intro">
@@ -105,7 +108,7 @@
     </div>
     <div class="verzekeringen">
       <p>Vul hier jouw uitgaven in aan verzekeringen p/m</p>
-      <span class="currencyinput">€<input type="text" name="huur"></span>
+      <span class="currencyinput">€<input id="uitgavenverzekeringen" type="text" name="huur"></span>
     </div>
   </div>
      
@@ -115,11 +118,11 @@
           <div class="containerverzekeringen">
           <div class="verzekeringen">
           <p>Dit is de gemiddelde prijs aan verzekeringen p/m</p>
-          <p>0,000</p>
+          <p id="gemiddeldeverzekering">400,-</p>
         </div>
         <div class="verzekeringen">
           <p>Vul hier jouw uitgaven in aan verzekeringen p/m</p>
-          <span class="currencyinput">€<input type="text" name="huur"></span>
+          <span class="currencyinput">€<input onkeydown="getInput()" id="uitgavenverzekering" type="text" name="huur" ></span>
         </div>
       </div>
          
@@ -140,6 +143,31 @@
   </div>
 </div>
 </div>
+<div class="container">
+  <h2>Gemiddelde uitgaven voor een huishouden</h2>
+<div id="intro">
+  <p>Ik woon in een huishouden met <input type="number" name="aantal"> volwassen(en) en
+    <input type="number" name="aantal"> kind(eren), de maandelijkse huur bedraagt <br>
+    <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (inclusief service kosten). Per maand heb ik een inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span>
+    <button id="submit">GO</button>
+  </p>
+  
+</div>
+<div id="house">
+  
+</div>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="showValue(this.value, 'demo')">
+   <span id="demo"></span>
+</div>
+<div class="slidecontainer">
+  <input type="range" min="1" max="178" value="50" class="slider" onchange="showValue(this.value, 'demo2')" id="myRange2">
+  <p id="textInput">Value: <span id="demo2"></span></p>
+</div>
+
+<p>Totaal: <span id="total"></span></p>
+  </div>
     </div>
 </body>
 

@@ -27,6 +27,52 @@ const alleenInkomen = dataAlleenstaand.filter(element => {
 });
 console.log(alleenInkomen)
 
+function uitgavenInkomen(){
+// Maandelikse kosten & inkomen opslaan van gebruiker
+function slaOpMaandelijkseKosten() {
+    const inputMaandelijkseKosten = document.getElementById("maandelijksekosten").value;
+    console.log("Maandelijkse kosten:" + inputMaandelijkseKosten);
+}
+
+const knopMaandelijkseKosten = document.getElementById("knopmaandelijksekosten");
+knopMaandelijkseKosten.addEventListener("click", slaOpMaandelijkseKosten);
+
+function slaOpMaandelijkseInkomen() {
+    const inputMaandelijkseInkomen = document.getElementById("maandelijksinkomen").value;
+    console.log("Maandelijks inkomen:" + inputMaandelijkseInkomen);
+    // const verschil = document.getElementById("verschil").innerHTML("Het verschil is" + inputMaandelijkseInkomen );
+    // console.log(verschil)
+    
+}
+const knopMaandelijksInkomen = document.getElementById("knopmaandelijksinkomen");
+knopMaandelijksInkomen.addEventListener("click", slaOpMaandelijkseInkomen);
+
+
+console.log(verschil)
+}
+uitgavenInkomen();
+
+const uitgavenVerzekeringen = document.getElementById("uitgavenverzekering").value;
+const gemiddeldeVerzekeringen = document.querySelector("#gemiddeldeverzekering").innerHTML;
+console.log(uitgavenVerzekeringen);
+console.log(gemiddeldeVerzekeringen);
+getInput();
+function getInput() {
+    document.getElementById("uitgavenverzekering").style.backgroundColor = "green";
+    console.log(uitgavenVerzekeringen);
+}
+
+function kleurOpBasisVanVerzekering() {
+    if(uitgavenVerzekeringen > gemiddeldeVerzekeringen ) {
+        uitgavenVerzekeringen.style.backgroundColor = "#FF0000";
+    }
+    // if(uitgavenVerzekeringen < gemiddeldeVerzekeringen ) {
+    //     uitgavenVerzekeringen.style.backgroundColor = "#008000";
+    // }
+}
+
+kleurOpBasisVanVerzekering();
+
 
 
 

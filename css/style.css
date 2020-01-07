@@ -53,7 +53,7 @@ header {
 }
 
 .container {
-    width: 75%;
+    width: 85%;
     margin-top: -64px;
     height: 103vh;
 }
@@ -94,7 +94,7 @@ svg {
 
 .currencyinput {
     color: #01216A;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 15px;
     
 }
@@ -149,3 +149,76 @@ input[type=text], input[type=number]  {
 .inputenvragen .vragen:nth-child(4) {
     margin-left: 4%;
 }
+
+.vragen button, #submit {
+    width: 50px;
+    height: 25px;
+    background-color: #00B289;
+    border-radius: 4px;
+    font-style: bold;
+    border: 2px solid #01216A;
+}
+
+.slidecontainer {
+    width: 50%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  #intro {
+      display: flex;
+      width: 450px;
+
+  }
+
+  #intro input {
+      width: 35px;
+      margin-bottom: 0px;
+  }
+
+  input#maandelijksekosten, input#maandelijksinkomen {
+      width: 65px;
+      margin-left: 5px;
+  }
+  
+  #house {
+    background-image: url(../images/Huis/Vloer-01.svg);
+    background-repeat: no-repeat;
+      width: 80%;
+      height: 100%;
+      margin-left: 25%;
+      margin-top: -5%;
+  }
