@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
   <script type="module" src="js/index.js"></script>
   <script type="module" src="js/slider.js"></script>
   <title>Nibud</title>
@@ -155,18 +156,43 @@
 </div>
 <div id="house">
   
+  <div class="info" id="kleding">
+    <h3>Kleding</h3>
+    <p>Maandelijks geven veel mensen onnodig geld uit aan kleding. Wil je meer tips over goedkoop kleding kopen lees dan <span>Tips voor goedkoop kleding</span></p>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="showValue(this.value, 'demo')">
+       <span id="demo"></span>
+    </div>
+</div>
+<div class="info" id="vervoer">
+    <h3>Vervoer</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkope vervoersmiddelen</span></p>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="showValue(this.value, 'demo4')">
+       <span class="demo" id="demo4"></span>
+    </div>
+</div>
+<div class="info" id="voeding">
+    <h3>Voeding</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="showValue(this.value, 'demo3')">
+       <span class="demo" id="demo3"></span>
+    </div>
 </div>
 
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="showValue(this.value, 'demo')">
-   <span id="demo"></span>
-</div>
-<div class="slidecontainer">
-  <input type="range" min="1" max="178" value="50" class="slider" onchange="showValue(this.value, 'demo2')" id="myRange2">
-  <p id="textInput">Value: <span id="demo2"></span></p>
+    <img id="kledingkast" class="objecten" src="./images/meubeuls/meubels-19.png" alt="">
+    <img id="koelkast" class="objecten" src="./images/meubeuls/meubels-27.png" alt="">
+    <img id="aanrecht" class="objecten" src="./images/meubeuls/meubels-08.png" alt="">
+    <img id="kleed" class="objecten" src="./images/meubeuls/meubels-22.png" alt="">
+    <img id="laptop" class="objecten" src="./images/meubeuls/meubels-13.png" alt="">
+    <img id="cigaretten" class="objecten" src="./images/meubeuls/meubels-12.png" alt="">
+    <img id="fiets" class="objecten" src="./images/meubeuls/meubels-02.png" alt="">
 </div>
 
-<p>Totaal: <span id="total"></span></p>
+
+
+<!-- <p>Totaal: <span id="total"></span></p> -->
   </div>
     </div>
 </body>
