@@ -6,7 +6,7 @@ h3 {
     font-size: 20px;
 }
 .welkom {
-    height: 103.5vh;
+    height: 105vh;
     background-color: #00B289;
     
 }
@@ -22,17 +22,19 @@ h3 {
     margin-bottom: -20px;
 }
 .welkomTekst p {
+    margin-top: 22%;
     font-size:20px;
+    width: 50%;
+    text-align: justify;
 }
 header img {
 width: 150px;
 }
 .image {
-    height: 50%;
+    height: 60%;
     overflow: hidden;
     background-size: cover;
-    background-position: center;
-    background-image: url('../images/person\ writing.jpg');
+    background-color: #253B6C;
 }
 img {
     width: 100%;
@@ -51,12 +53,15 @@ header {
    margin: -10px;
 
 }
-
-.container {
+/* #containerHuis {
     width: 85%;
+} */
+.container {
+    width: 70%;
     margin-top: -64px;
-    height: 103vh;
+    height: 105vh;
 }
+
 
 .container h2 {
     font-size: 40px;
@@ -99,20 +104,38 @@ svg {
     
 }
 
-input[type=text], input[type=number]  {
-    font-size: 25px;
+input[type=text], input[type=number] {
+    font-size: 20px;
     margin-bottom: 10px;
     padding-left: 10px;
     color: #01216A;
     border-color: #01216A;
     border-radius: 3px;
-    height: 25px;
+    height: 20px;
+}
+select {
+    border-color: #01216A;
+    border-radius: 3px;
+    border: 2px solid;
+    width: 5em;
 }
 
 .intro {
     width: 50%;
+margin-bottom: 5%;
 }
 
+.intro p {
+    text-align: justify;
+   
+}
+
+#intro p {
+    line-height: 50px;
+}
+hr {
+    border-color: #00B289;
+}
 .inputenvragen {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +179,7 @@ input[type=text], input[type=number]  {
     background-color: #00B289;
     border-radius: 4px;
     font-style: bold;
-    border: 2px solid #01216A;
+    border: 2px solid white;
 }
 
 .slidecontainer {
@@ -202,10 +225,16 @@ input[type=text], input[type=number]  {
   
   #intro {
       display: flex;
-      width: 450px;
-
+      width: 40%;
+      text-align: justify;
   }
 
+  #intro:nth-child(1){
+      margin-right: 5%;
+  }
+  #intro:nth-child(2){
+    margin-left: 5%;
+}
   #intro input {
       width: 35px;
       margin-bottom: 0px;
@@ -219,14 +248,17 @@ input[type=text], input[type=number]  {
   #house {
     background-image: url(../images/meubeuls/meubels-30.png);
     background-repeat: no-repeat;
-      width: 80%;
-      height: 100%;
-      margin-left: 25%;
-      margin-top: -5%;
+      width: 98%;
+      height: 85%;
+      margin-left: -17%;
+      margin-top: 8%;
       background-size: contain;
 
   }
-
+#introHuis {
+    width: 42%;
+    text-align: justify;
+}
   #test {
       margin-left: 650px;
       margin-top: 50px;
@@ -322,4 +354,156 @@ input[type=text], input[type=number]  {
 #voeding {
     margin-left: 10%;
     margin-top: 5%;
+}
+
+.huis {
+    width: 402px;
+    height: 157px;
+    margin-left: 40%;
+    margin-top: -13.63%;
+    position: absolute;
+}
+
+#welkomTitel {
+    width: 919px;
+    height: 188px;
+    margin-top: -25em;
+    position: absolute;
+}
+
+#bon {
+    height: 400px;
+    width: 275px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-left: 101%;
+}
+
+.categorie {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: -15px 15px -15px 15px;
+    
+}
+
+.categorie p {
+    font-size: 12px;
+}
+.nummer {
+    background-color: #253B6C;
+    border-radius: 45px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    padding: 1.5px;
+    
+}
+
+.categorie p:nth-of-type(3) {
+    width: 60%;
+}
+
+.categorie p:nth-of-type(1) {
+    width: 450px;
+}
+
+#scheidingBon {
+    width: 90%;
+    border-color: black;
+}
+
+#categorieTotaal p {
+    font-size: 15px;
+}
+
+.categorieTotaal p:nth-child(1) {
+    width: 275px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+#containerTips {
+    width: 70%;
+margin-top: 10%;
+height: 105vh;
+}
+
+.horizontalLine {
+    color: #00B289;
+    width: 527px;
+    display: flex;
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 525px;
+   
+    
+}
+.verticalLine {
+    color: #00B289;
+    margin-left: 94.2%;
+    height: 833px;
+    margin-top: -48.55%;
+    display: flex;
+    position: absolute;
+    border-color: #00B289;
+}
+#lineHouse {
+    width: 681px;
+    margin-left: 29%;
+}
+
+.horizontalLineSmall {
+    color: #00B289;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 63px; 
+}
+
+.verticalLineLeft {
+    height: 640px;
+    display: flex;
+    position: absolute;
+    margin-left: -13.31%;
+    margin-top: 30.2px;
+}
+
+.verticalLineLeft:nth-child(2) {
+    margin-top: 63px;
+}
+
+#lastHorizontalLine {
+    margin-top: 65px;
+}
+
+.verticalLineLast {
+    color: #00B289;
+   margin-left: 82.2%;
+    height: 750px;
+   margin-top: -49px;
+    display: flex;
+    position: absolute;
+    border-color: #00B289;
+}
+
+#footer {
+    background: #00B289;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    display: block;
+    margin-left: -15%;
+    margin-top: 50%;
+}
+
+#huisFooter {
+    margin-top: 39%;
+    width: 375px;
+    height: auto;
+    margin-left: 45%;
+    position: absolute;
 }

@@ -9,6 +9,7 @@
   <!-- <script src="jquery-3.4.1.min.js"></script> -->
   <script type="module" src="js/index.js"></script>
   <script type="module" src="js/slider.js"></script>
+  <script type="module" src="js/bon.js"></script>
   <title>Nibud</title>
 </head>
 
@@ -21,141 +22,55 @@
         <!-- <img src="images/person writing.jpg" alt=""> -->
       </div>
       <div class="welkomTekst">
-        <h1>Welkom</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        <img src="./images/titel met ondertitel.png" id="welkomTitel" alt="">
+        <img src="./images/huis.png" class="huis" alt="">
+        
+        <p>Ontdek de verschillende kosten in het budget huis en zie het verschil tussen jou kosten en die van de gemiddelde Nederlander in jou situatie. Wie weet hou je volgende maand meer over!</p>
       </div>
     </div>
     <div class="container">
       <div class="intro">
+          <hr class="verticalLineLeft">
         <h2>Algemene vragen</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in</p>
+        <p>Allereerst willen wij wat algemene informatie weten zodat wij jou het beste kunnen helpen. *Deze informatie wordt niet opgeslagen.</p>
       </div>
+      <hr>
       <div class="inputenvragen">
-<div class="vragen">
-        <h3>Hoe groot is de inhoud van je huishouden?</h3>
-        <input type="number" name="aantal"></span>
-        <input type="number" name="aantal"></span>
-      </div>
-      <div class="vragen">
-          <h3>In wat soort huis woont uw?</h3>
-          <div class="woningen">
-            <div>
-              <svg width="50" height="50">
-                <rect width="50" height="50" style="fill:black;" />
-              </svg>
-              <p>Losstaande woningen</p>
-            </div>
-            <div>
-              <svg width="50" height="50">
-                <rect width="50" height="50" style="fill:black;" />
-              </svg>
-              <p>2 onder 1 kap</p>
-            </div>
-            <div>
-              <svg width="50" height="50">
-                <rect width="50" height="50" style="fill:black;" />
-              </svg>
-              <p>Appartement</p>
-            </div>
-            <div>
-              <svg width="50" height="50">
-                <rect width="50" height="50" style="fill:black;" />
-              </svg>
-              <p>Tussenwoning</p>
-            </div>
-            <div>
-              <svg width="50" height="50">
-                <rect width="50" height="50" style="fill:black;" />
-              </svg>
-              <p>Hoekwoning</p>
-            </div>
-          </div>
-       
-      </div>
-      <div class="vragen">
-          <h3>Wat is uw maandelijks inkomen als huishouden?</h3>
-          <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span><button id="knopmaandelijksinkomen">GO</button>
-      </div>
-      <div class="vragen">
-        <h3>Wat zijn de maandelijkse kosten voor het huis?</h3>
-        <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span><button id="knopmaandelijksekosten">GO</button>
-       
 
-    </div>
-    
+    <div id="intro">
+        <p>Ik woon in een huishouden van <input type="number" name="aantal"> volwassen(en) en met
+          <input type="number" name="aantal"> kind(eren). Op dit moment ga ik <select name="" id="">
+              <option value="Niet">Niet</option>
+              <option value="Wel">Wel</option>
+          </select> naar school en betaal ik <select name="" id="">
+              <option value="Geen">Geen</option>
+              <option value="Wel">Wel</option>
+          </select> maandelijks bedrag voor onderwijs.
+<br>
+          <button id="submit">GO</button>
+        </p>
+        
+      </div>
+
+      <div id="intro">
+          <p>Samen hebben wij een totaal inkomen van, de maandelijkse huur bedraagt <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span>
+            (denk hier aan alle soorten inkomen). De huur van het huis bedraagt
+            <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (dit is inclusief service kosten).
+            <br>
+            <button id="submit">GO</button>
+          </p>
+          
+        </div>
   </div>
   <h3 id="verschil"></h3>
 </div>
-<div class="container">
-    <div class="intro">
-      <h2>Algemene vragen</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in</p>
-    </div>
-    <div class="inputenvragen">
-<div class="vragen">
-    <h3>Verzekeringen</h3>
-      <div class="containerverzekeringen">
-      <div class="verzekeringen">
-      <p>Dit is de gemiddelde prijs aan verzekeringen p/m</p>
-      <p>0,000</p>
-    </div>
-    <div class="verzekeringen">
-      <p>Vul hier jouw uitgaven in aan verzekeringen p/m</p>
-      <span class="currencyinput">€<input id="uitgavenverzekeringen" type="text" name="huur"></span>
-    </div>
-  </div>
-     
-    </div>
-    <div class="vragen">
-        <h3>Verzekeringen</h3>
-          <div class="containerverzekeringen">
-          <div class="verzekeringen">
-          <p>Dit is de gemiddelde prijs aan verzekeringen p/m</p>
-          <p id="gemiddeldeverzekering">400,-</p>
-        </div>
-        <div class="verzekeringen">
-          <p>Vul hier jouw uitgaven in aan verzekeringen p/m</p>
-          <span class="currencyinput">€<input onkeydown="getInput()" id="uitgavenverzekering" type="text" name="huur" ></span>
-        </div>
-      </div>
-         
-        </div>
-    <div class="vragen">
-        <h3>Tips</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in</p>
-    </div>
-    <div class="vragen">
-      <h3>Tips</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in</p>
-     
 
-  </div>
-</div>
-</div>
-<div class="container">
-  <h2>Gemiddelde uitgaven voor een huishouden</h2>
-<div id="intro">
-  <p>Ik woon in een huishouden met <input type="number" name="aantal"> volwassen(en) en
-    <input type="number" name="aantal"> kind(eren), de maandelijkse huur bedraagt <br>
-    <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (inclusief service kosten). Per maand heb ik een inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span>
-    <button id="submit">GO</button>
-  </p>
-  
-</div>
+<div id="containerHuis" class="container">
+    <hr class="horizontalLineSmall">
+  <h2>Het budget huis</h2>
+  <hr class="horizontalLine" id="lineHouse">
+  <p id="introHuis">Deze studio heeft de gemiddelde prijzen van de kosten voor iemand van jou situatie, per maand verdeeld in categorieen. Vul in een paar stappen jouw kosten in om overzicht te krijgen in jouw bestedingen.</p>
 <div id="house">
-  
   <div class="info" id="kleding">
     <h3>Kleding</h3>
     <p>Maandelijks geven veel mensen onnodig geld uit aan kleding. Wil je meer tips over goedkoop kleding kopen lees dan <span>Tips voor goedkoop kleding</span></p>
@@ -188,11 +103,45 @@
     <img id="laptop" class="objecten" src="./images/meubeuls/meubels-13.png" alt="">
     <img id="cigaretten" class="objecten" src="./images/meubeuls/meubels-12.png" alt="">
     <img id="fiets" class="objecten" src="./images/meubeuls/meubels-02.png" alt="">
+
+    <div id="bon">
+<h3>De maandelijkse bon</h3>
+<div class="categorie"><p>Huur</p><p>-</p> <p id="bon1"> 5</p> <p class="nummer">1</p></div>
+<div class="categorie"><p>E+W+L</p><p>-</p> <p id="bon2"> 150</p> <p class="nummer">2</p></div>
+<div class="categorie"><p>Kleding</p><p>-</p> <p id="bon3">78</p> <p class="nummer">3</p></div>
+<div class="categorie"><p>Voeding</p><p>-</p> <p id="bon4">54</p> <p class="nummer">4</p></div>
+<div class="categorie"><p>Onderwijs</p><p>-</p> <p id="bon5">32</p> <p class="nummer">5</p></div>
+<div class="categorie"><p>Vervoer</p><p>-</p> <p id="bon6">45</p> <p class="nummer">6</p></div>
+<div class="categorie"><p>Abbonementen</p><p>-</p> <p id="bon7">108</p> <p class="nummer">7</p></div>
+<div class="categorie"><p>Vrije tijd</p><p>-</p> <p id="bon8">98</p> <p class="nummer">8</p></div>
+<div class="categorie"><p>Verzekering</p><p>-</p> <p id="bon9">170</p> <p class="nummer">9</p></div>
+<div class="categorie"><p>Inkomen</p><p>+</p> <p id="bon10">550</p> <p class="nummer">10</p></div>
+<hr id="scheidingBon">
+<div class="categorie" id="categorieTotaal"><p id="totalTitel" class="total">Totaal</p> <p class="total" id="totaalBon"></p> </div>
+    </div>
+    <hr class="verticalLine" >
 </div>
 
 
 
 <!-- <p>Totaal: <span id="total"></span></p> -->
+  </div>
+  <div class="container" id="containerTips">
+    <hr class="horizontalLineSmall">
+    <hr class="verticalLineLeft">
+      <h2>De budgetschoonmaak</h2>
+      <hr class="horizontalLine">
+      <p id="introHuis">Nu je weet op welke kosten er door groeimogelijkheden zijn gaan we met deze je doornemen, doormiddel van persoonlijke tips van experts en verhalen van andere.</p>
+  </div>
+  <div class="container">
+      <hr class="horizontalLineSmall">
+      <hr class="horizontalLine" id="lastHorizontalLine">
+    <h2>Toch nog hulp nodig?</h2>
+    <hr class="verticalLineLast">
+    <img src="./images/Huis/huis.png" id="huisFooter" alt="">
+    <div id="footer">
+        
+    </div>
   </div>
     </div>
 </body>
