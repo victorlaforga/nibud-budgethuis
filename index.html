@@ -2,236 +2,367 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="module" src="js/index.js"></script>
-  <script type="module" src="js/slider.js"></script>
-  <script type="module" src="js/bon.js"></script>
-  <title>Nibud</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/slider.js"></script>
+    <script type="module" src="js/bon.js"></script>
+    <title>Nibud</title>
 </head>
 
 <body>
 
-  <div class="page">
+    <div class="page">
 
-    <div class="welkom">
-      <div class="image">
-        <!-- <img src="images/person writing.jpg" alt=""> -->
-      </div>
-      <div class="welkomTekst">
-        <img src="./images/titel met ondertitel.png" id="welkomTitel" alt="">
-        <img src="./images/huis.png" class="huis" alt="">
-        
-        <p>Ontdek de verschillende kosten in het budget huis en zie het verschil tussen jou kosten en die van de gemiddelde Nederlander in jou situatie. Wie weet hou je volgende maand meer over!</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="intro">
-          <hr class="verticalLineLeft">
-        <h2>Algemene vragen</h2>
-        <p>Allereerst willen wij wat algemene informatie weten zodat wij jou het beste kunnen helpen. *Deze informatie wordt niet opgeslagen.</p>
-      </div>
-      <hr>
-      <div class="inputenvragen">
+        <div class="welkom">
+            <div class="image">
+                <img src="./images/animatiehoofdv2.gif" alt="">
+            </div>
+            <div class="welkomTekst">
 
-    <div id="intro">
-        <p>Ik woon in een huishouden van <input type="number" name="aantal"> volwassen(en) en met
-          <input type="number" name="aantal"> kind(eren). Op dit moment ga ik <select name="" id="">
-              <option value="Niet">Niet</option>
-              <option value="Wel">Wel</option>
-          </select> naar school en betaal ik <select name="" id="">
-              <option value="Geen">Geen</option>
-              <option value="Wel">Wel</option>
-          </select> maandelijks bedrag voor onderwijs.
-<br>
-          
-        </p>
-        
-      </div>
+                <!-- <img src="./images/huis.png" class="huis" alt=""> -->
 
-      <div id="intro">
-          <p>Samen hebben wij een totaal inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span> per maand.
-             De huur van het huis bedraagt
-            <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (denk hier aan alle soorten inkomen).
-            <br>
-            <button id="submit">Laten we naar binnen gaan!</button>
-          </p>
-          
+                <p>Ontdek de verschillende kosten in het budget huis en zie het verschil tussen jou kosten en die van de gemiddelde Nederlander in jou situatie. Wie weet hou je volgende maand meer over!</p>
+            </div>
         </div>
-  </div>
-  <h3 id="verschil"></h3>
-</div>
+        <div class="container">
+            <div class="intro">
+                <hr class="verticalLineLeft">
+                <h2>Algemene vragen</h2>
+                <p>Allereerst willen wij wat algemene informatie weten zodat wij jou het beste kunnen helpen. *Deze informatie wordt niet opgeslagen.</p>
+            </div>
+            <hr>
+            <div class="inputenvragen">
 
-<div id="containerHuis" class="container">
-    <hr class="horizontalLineSmall">
-  <h2>Het budget huis</h2>
-  <hr class="horizontalLine" id="lineHouse">
-  <p id="introHuis">Deze studio heeft de gemiddelde prijzen van de kosten voor iemand van jou situatie, per maand verdeeld in categorieen. Vul in een paar stappen jouw kosten in om overzicht te krijgen in jouw bestedingen.</p>
-<div id="house">
-  <div class="info" id="kleding">
-    <h3>Kleding</h3>
-    <p>Maandelijks geven veel mensen onnodig geld uit aan kleding. Wil je meer tips over goedkoop kleding kopen lees dan <span>Tips voor goedkoop kleding</span></p>
-    <div class="slidecontainer">
-      <input type="range" min="1" max="165" value="55" class="slider" id="myRange">
-      <div class="averageDiv">
-      <hr class="average" id="averageKleding"/> 
-      <span>55</span>
-    </div>
-       <span id="demo"></span>
-    </div>
-</div>
-<div class="info" id="vervoer">
-    <h3>Vervoer</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkope vervoersmiddelen</span></p>
-    
-    <div class="slidecontainer">
-      <input type="range" min="1" max="126" value="42" class="slider" id="myRange3">
-      <div class="averageDiv">
-        <hr class="average"/> 
-        <span>42</span>
-      </div>
-       <span id="demo3"></span>
-      
-    </div>
-</div>
-<div class="info" id="voeding">
-    <h3>Voeding</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-    <div class="slidecontainer">
-      <input type="range" min="1" max="642" value="214" class="slider" id="myRange2">
-      <div class="averageDiv">
-        <hr class="average" id="averageVoeding"/> 
-        <span>214</span>
-      </div>
-       <span id="demo2"></span>
-       
-    </div>
-</div>
-<div class="info" id="ewl">
-  <h3>E + W + L</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="495" value="165" class="slider" id="myRange4">
-    <div class="averageDiv">
-      <hr class="average" id="averageEwl"/> 
-      <span>165</span>
-    </div>
-     <span id="demo4"></span>
-  </div>
-</div>
-<div class="info" id="onderwijs">
-  <h3>Onderwijs</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="350" value="0" class="slider" id="myRange5">
-    
-     <span id="demo5"></span>
-  </div>
-</div>
-<div class="info" id="verzekeringen">
-  <h3>Verzekeringen</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="513" value="171" class="slider" id="myRange6">
-    <div class="averageDiv">
-      <hr class="average" id="averageVerzekering"/> 
-      <span>171</span>
-    </div>
-     <span id="demo6"></span>
-  </div>
-</div>
-<div class="info" id="abbonementen">
-  <h3>Abbonementen</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="243" value="81" class="slider" id="myRange7">
-    <div class="averageDiv">
-      <hr class="average" id="averageAbbonementen"/> 
-      <span>81</span>
-    </div>
-     <span id="demo7"></span>
-  </div>
-</div>
-<div class="info" id="vrijetijd">
-  <h3>Vrije tijd</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="180" value="60" class="slider" id="myRange8">
-    <div class="averageDiv">
-      <hr class="average"/> 
-      <span>60</span>
-    </div>
-     <span id="demo8"></span>
-  </div>
-</div>
-<div class="info" id="overige">
-  <h3>Overige</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <span>Tips voor goedkoop eten</span></p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="180" value="60" class="slider" id="myRange9">
-    <div class="averageDiv">
-      <hr class="average"/> 
-      <span>60</span>
-    </div>
-     <span id="demo9"></span>
-  </div>
-</div>
+                <div id="intro">
+                    <p>Ik woon in een huishouden van
+                        <input type="number" name="aantal"> volwassen(en) en met
+                        <input type="number" name="aantal"> kind(eren). Op dit moment ga ik
+                        <select name="" id="">
+                            <option value="Niet">Niet</option>
+                            <option value="Wel">Wel</option>
+                        </select> naar school en betaal ik
+                        <select name="" id="">
+                            <option value="Geen">Geen</option>
+                            <option value="Wel">Wel</option>
+                        </select> maandelijks bedrag voor onderwijs.
+                        <br>
 
-    <img id="kledingkast" class="objecten" src="./images/meubeuls/meubels-19.png" alt="">
-    <img id="koelkast" class="objecten" src="./images/meubeuls/meubels-27.png" alt="">
-    <img id="aanrecht" class="objecten" src="./images/meubeuls/meubels-08.png" alt="">
-    <img id="kleed" class="objecten" src="./images/meubeuls/meubels-22.png" alt="">
-    <img id="laptop" class="objecten" src="./images/meubeuls/meubels-13.png" alt="">
-    <img id="bier" class="objecten" src="./images/meubeuls/meubels export deel 2-33.png" alt="">
-    <img id="fiets" class="objecten" src="./images/meubeuls/meubels-02.png" alt="">
-    <img id="certificaat" class="objecten" src="./images/meubeuls/certificaat.png" alt="">
-    <img id="papieren" class="objecten" src="./images/meubeuls/papieren.png" alt="">
+                    </p>
 
-    <div id="bon">
-<h3>De maandelijkse bon</h3>
-<div class="categorie" id="inkomenBon"><p>Inkomen</p><p>+</p> <p id="bon1">550</p> </div>
-<div class="categorie" id="huurBon"><p>Huur</p><p>-</p> <p id="bon2"> 5</p> </div>
-<div class="categorie" id="ewlBon"><p>E+W+L</p><p>-</p> <p id="bon3"> 150</p> </div>
-<div class="categorie" id="kledingBon"><p>Kleding</p><p>-</p> <p id="bon4">78</p> </div>
-<div class="categorie" id="voedingBon"><p>Voeding</p><p>-</p> <p id="bon5">54</p> </div>
-<div class="categorie" id="onderwijsBon"><p>Onderwijs</p><p>-</p> <p id="bon6">32</p> </div>
-<div class="categorie" id="vervoerBon"><p>Vervoer</p><p>-</p> <p id="bon7">45</p> </div>
-<div class="categorie" id="abbonementBon"><p>Abbonementen</p><p>-</p> <p id="bon8">108</p> </div>
-<div class="categorie" id="vrijetijdBon"><p>Vrije tijd</p><p>-</p> <p id="bon9">98</p> </div>
-<div class="categorie" id="verzekeringBon"><p>Verzekering</p><p>-</p> <p id="bon10">170</p> </div>
-<div class="categorie" id="overigeBon"><p>Overig</p><p>-</p> <p id="bon11">170</p></div>
+                </div>
 
-<hr id="scheidingBon">
-<div class="categorie" id="categorieTotaal"><p id="totalTitel" class="total">Totaal</p> <p class="total" id="totaalBon"></p> </div>
-<button type="button" id="close">Close</button>
-    </div>
-    <hr class="verticalLine" >
-</div>
+                <div id="intro">
+                    <p>Samen hebben wij een totaal inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span> per maand. De huur van het huis bedraagt
+                        <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (denk hier aan alle soorten inkomen).
+                        <br>
+                        <button id="submit">Laten we naar binnen gaan!</button>
+                    </p>
 
+                </div>
+            </div>
+            <h3 id="verschil"></h3>
+        </div>
 
+        <div id="containerHuis" class="container">
+            <hr class="horizontalLineSmall">
+            <h2>Het budget huis</h2>
+            <hr class="horizontalLine" id="lineHouse">
+            <p id="introHuis">Deze studio heeft de gemiddelde prijzen van de kosten voor iemand van jou situatie, per maand verdeeld in categorieen. Vul in een paar stappen jouw kosten in om overzicht te krijgen in jouw bestedingen.</p>
+            <div id="house">
+                <div class="info" id="kleding">
+                    <h3>Kleding</h3>
+                    <span class="valueSlider" id="demo"></span>
+                    <p>Maandelijks geven veel mensen onnodig geld uit aan kleding. Wil je meer tips over goedkoop kleding kopen lees dan <span>Tips voor goedkoop kleding</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="165" value="0" class="slider" id="myRange">
+                        <div class="averageDiv">
+                            <hr class="average" id="averageKleding" />
+                            <span>55</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="info" id="vervoer">
+                    <h3>Vervoer</h3>
+                    <span class="valueSlider" id="demo3"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkope vervoersmiddelen</span></p>
 
-<!-- <p>Totaal: <span id="total"></span></p> -->
-  </div>
-  <div class="container" id="containerTips">
-    <hr class="horizontalLineSmall">
-    <hr class="verticalLineLeft">
-      <h2>De budgetschoonmaak</h2>
-      <hr class="horizontalLine">
-      <p id="introHuis">Nu je weet op welke kosten er door groeimogelijkheden zijn gaan we met deze je doornemen, doormiddel van persoonlijke tips van experts en verhalen van andere.</p>
-  </div>
-  <div class="container">
-      <hr class="horizontalLineSmall">
-      <hr class="horizontalLine" id="lastHorizontalLine">
-    <h2>Toch nog hulp nodig?</h2>
-    <hr class="verticalLineLast">
-    <img src="./images/Huis/huis.png" id="huisFooter" alt="">
-    <div id="footer">
-        
-    </div>
-  </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="126" value="0" class="slider" id="myRange3">
+                        <div class="averageDiv">
+                            <hr class="average" />
+                            <span>42</span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="info" id="voeding">
+                    <h3>Voeding</h3>
+                    <span class="valueSlider" id="demo2"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="642" value="0" class="slider" id="myRange2">
+                        <div class="averageDiv">
+                            <hr class="average" id="averageVoeding" />
+                            <span>214</span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="info" id="ewl">
+                    <h3>E + W + L</h3>
+                    <span class="valueSlider" id="demo4"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="495" value="0" class="slider" id="myRange4">
+                        <div class="averageDiv">
+                            <hr class="average" id="averageEwl" />
+                            <span>165</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info" id="onderwijs">
+                    <h3>Onderwijs</h3>
+                    <span class="valueSlider" id="demo5"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="350" value="0" class="slider" id="myRange5">
+
+                        
+                    </div>
+                </div>
+                <div class="info" id="verzekeringen">
+                    <h3>Verzekeringen</h3>
+                    <span class="valueSlider" id="demo6"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="513" value="0" class="slider" id="myRange6">
+                        <div class="averageDiv">
+                            <hr class="average" id="averageVerzekering" />
+                            <span>171</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info" id="abbonementen">
+                    <h3>Abbonementen</h3>
+                    <span class="valueSlider" id="demo7"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="243" value="0" class="slider" id="myRange7">
+                        <div class="averageDiv">
+                            <hr class="average" id="averageAbbonementen" />
+                            <span>81</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info" id="vrijetijd">
+                    <h3>Vrije tijd</h3>
+                    <span class="valueSlider" id="demo8"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="180" value="0" class="slider" id="myRange8">
+                        <div class="averageDiv">
+                            <hr class="average" />
+                            <span>60</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info" id="overige">
+                    <h3>Overige</h3>
+                    <span class="valueSlider" id="demo9"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Tips voor goedkoop eten</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="180" value="0" class="slider" id="myRange9">
+                        <div class="averageDiv">
+                            <hr class="average" />
+                            <span>60</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <img id="kledingkast" class="objecten" src="./images/meubeuls/meubels-19.png" alt="">
+                <img id="koelkast" class="objecten" src="./images/meubeuls/meubels-27.png" alt="">
+                <img id="aanrecht" class="objecten" src="./images/meubeuls/meubels-08.png" alt="">
+                <img id="kleed" class="objecten" src="./images/meubeuls/meubels-22.png" alt="">
+                <img id="laptop" class="objecten" src="./images/meubeuls/meubels-13.png" alt="">
+                <img id="bier" class="objecten" src="./images/meubeuls/meubels export deel 2-33.png" alt="">
+                <img id="fiets" class="objecten" src="./images/meubeuls/meubels-02.png" alt="">
+                <img id="certificaat" class="objecten" src="./images/meubeuls/certificaat.png" alt="">
+                <img id="papieren" class="objecten" src="./images/meubeuls/papieren.png" alt="">
+
+                <div id="bon">
+                    <h3>De maandelijkse bon</h3>
+                    <div class="categorie" id="inkomenBon">
+                        <p>Inkomen</p>
+                        <p>+</p>
+                        <p id="bon1">0</p>
+                    </div>
+                    <div class="categorie" id="huurBon">
+                        <p>Huur</p>
+                        <p>-</p>
+                        <p id="bon2">0</p>
+                    </div>
+                    <div class="categorie" id="ewlBon">
+                        <p>E+W+L</p>
+                        <p>-</p>
+                        <p id="bon3">0</p>
+                    </div>
+                    <div class="categorie" id="kledingBon">
+                        <p>Kleding</p>
+                        <p>-</p>
+                        <p id="bon4">0</p>
+                    </div>
+                    <div class="categorie" id="voedingBon">
+                        <p>Voeding</p>
+                        <p>-</p>
+                        <p id="bon5">0</p>
+                    </div>
+                    <div class="categorie" id="onderwijsBon">
+                        <p>Onderwijs</p>
+                        <p>-</p>
+                        <p id="bon6">0</p>
+                    </div>
+                    <div class="categorie" id="vervoerBon">
+                        <p>Vervoer</p>
+                        <p>-</p>
+                        <p id="bon7">0</p>
+                    </div>
+                    <div class="categorie" id="abbonementBon">
+                        <p>Abbonementen</p>
+                        <p>-</p>
+                        <p id="bon8">0</p>
+                    </div>
+                    <div class="categorie" id="vrijetijdBon">
+                        <p>Vrije tijd</p>
+                        <p>-</p>
+                        <p id="bon9">0</p>
+                    </div>
+                    <div class="categorie" id="verzekeringBon">
+                        <p>Verzekering</p>
+                        <p>-</p>
+                        <p id="bon10">0</p>
+                    </div>
+                    <div class="categorie" id="overigeBon">
+                        <p>Overig</p>
+                        <p>-</p>
+                        <p id="bon11">0</p>
+                    </div>
+
+                    <hr id="scheidingBon">
+                    <div class="categorie" id="categorieTotaal">
+                        <p id="totalTitel" class="total">Totaal</p>
+                        <p class="total" id="totaalBon">0</p>
+                    </div>
+                </div>
+                <hr class="verticalLine">
+            </div>
+
+            <!-- <p>Totaal: <span id="total"></span></p> -->
+        </div>
+        <div class="container" id="containerTips">
+            <hr class="horizontalLineSmall">
+            <hr class="verticalLineLeft">
+            <h2>De budgetschoonmaak</h2>
+            <hr class="horizontalLine">
+            <p id="introHuis">Nu je weet op welke kosten er door groeimogelijkheden zijn gaan we met deze je doornemen, doormiddel van persoonlijke tips van experts en verhalen van andere.</p>
+<div id="containerTipsAll">
+            <div id="containerTipsDiv">
+                <div class="tips">
+                    <h3>Kleding</h3>
+                    <p class="tipsTekst">Kleding is een van de leukste dingen om geld aan uit te geven. Dit kan soms in de rode cijfers lopen.Door automatisch geld over te laten boeken naar een spaarrekening na het storten van je loon kun je jezelf aanleren <span>eerst geld opzij te zetten voordat je er kleding van koopt.</span> Zo kun je ook nog wat langer nadenken of je het product echt wil hebben. Of in plaats van iets nieuws te kopen zou je eens kunnen snuffelen voor <span>goede tweedehands en vintage items.</span> Dit bespaart geld, is beter voor het milieu én je vind er vaak hippe en degelijke spullen. Ook is het aan te raden om de <span>kortingen in het jaar bij jouw favoriete winkels</span> in de gaten te houden. Hier kun je veel geld mee besparen.
+                        <br>
+                        <br>
+                        <br><span class="quote">“Organiseer met vrienden een kleding uit ruilavond. Iedereen kan zijn oude kleding ruilen tegen iets nieuws en het kost niets! Daarnaast is het enorm gezellig.”</span>
+                        <br>
+                        <br>
+                        <br> Heb je geen geld voor kleding maar toch een nieuwe outfit nodig? Dan is de kledingbank er voor je om een nieuw paar kleren te ontvangen. Of kijk op facebook, hier vind je soms gratis of goedkope kleding die iemand in je buurt kwijt wil.</p>
+                </div>
+                <div class="tips">
+                    <h3>Voeding</h3>
+                    <p class="tipsTekst">Voeding is een belangrijk bron is ons leven en het is niet gek dat je hier veel geld aan kwijt bent. Eten wordt vaak geassocieerd met gezelligheid. Lekker op een terrasje zitten of uit eten, maar daar zijn ook andere goedkopere vervangingen voor. Ga in plaats van op een terrasje zitten <span> naar het park en neem zelf een drankje mee.</span> Of kook samen thuis in plaats van uit eten. Wat goed kan werken, vooral als je kinderen hebt, is om elke week <span> een planning te maken van je maaltijden per week.</span> Dit voorkomt meerdere keren naar de supermarkt gaan en met extra dingen thuis te komen die eigenlijk niet nodig zijn.
+                       
+                        <br>
+                        <br><span class="quote">
+          “Neem zelf eten, drinken en lekkers mee.”
+        </span>
+                        <br>
+                        
+                        <br> Naast buiten de deur eten kan het ook zijn dat je te dure boodschappen koopt. Bij een dure supermarkt bijvoorbeeld kijk in de buurt eventueel naar andere supermarkten zoals de Vomar of de lidl. Daarnaast staan duurdere producten vaak op ooghoogte. Even bukken en de knietjes strekken kan besparingen opleveren.
+                    </p>
+                </div>
+                <div class="tips">
+                    <h3>Vervoer</h3>
+                    <p class="tipsTekst">Van A naar B komen kan tegenwoordig op talloze manieren. De één gaat met de fiets naar werk en de ander met het OV. De meest voordeligste manier om jezelf te verplaatsen is natuurlijk om te lopen of te fietsen, kijk of je kleinere afstanden kan wandelen. Woon je in de stad ? Gebruik de fiets. Moet je toch langere afstanden afleggen naar werk bijvoorbeeld, bespreek met je werk of zij eventueel mee willen betalen aan OV. Als je uiteindelijk toch de auto moet pakken, zoek uit waar je het goedkoopst kan tanken en bespaar op lange termijn veel geld.
+
+                    
+                        <br>
+                        <br><span class="quote"> “Laat bij het tanken de zak snoep liggen” </span>
+                        <br>
+                        <br>
+                      
+
+                    </p>
+                </div>
+                <div class="tips">
+                    <h3>Verzekering</h3>
+                    <p class="tipsTekst">Een verzekering geeft een gevoel van veiligheid. Of het gaat om je zorg, inboedel of aansprakelijkheidsverzekering. Je betaald hier maandelijks geld aan voor het geval dat een situatie zich voordoet waar je niet in wil belanden. Daarom is het soms aantrekkelijk het zekere voor het onzekere te nemen, maar dit is niet altijd slim. Hier verlies je namelijk veel inkomen aan. Het is daarom slim om te <span>checken of je wel alle dekking waar je voor betaald écht nodig hebt.</span> Ben je niet te ruim verzekerd, bijvoorbeeld door een reisverzekering naast een reisverzekering in je zorgpakket. <span>Of omdat je dubbel verzekerd bent voor inboedel, auto of rechtsbijstand.</span> 
+                      <br>
+                        <br>
+<span class="quote">
+                        “Doe online onderzoek of je met een ander pakket of verzekeraar een betere maandprijs kunt vinden.” </span><br>
+                        <br>
+                        Voor autobezitters kan het ook voorkomen dat je een oud voertuig verzekerd als een nieuw voertuig. Dit kost veel extra. <span>Ook is het aan te raden om na te denken over je uitvaart verzekering.</span> Mensen denken hier niet graag aan, maar door op jongere leeftijd er eentje af te sluiten voorkom je hoge kosten op oudere leeftijd. En je scheept nabestaande niet op met toevallige uitvaartkosten.”
+                      
+
+                    </p>
+                </div>
+                <div class="tips">
+                    <h3>Contributies</h3>
+                    <p class="tipsTekst">We hebben allemaal kosten aan een lidmaatschap of abonnement. Naast je andere vaste lasten is het soms lastig om goed overzicht te hebben over waar je allemaal geld aan uitgeeft. Het is belangrijk hierop overzicht te hebben. Check of je abonnementen op maandprijs. Wordt deze ergens nog goedkoper aangeboden? Is je prijs competitief? En heb je al deze contributies of pakketten écht nodig? Kun je het doel ervan misschien op een andere of goedkopere manier behalen.
+                        <br>
+                        <br><span class="quote">
+                        “Steeds meer mensen kiezen bijvoorbeeld ervoor een streaming service als vervanger voor een televisie pakket te nemen.” 
+                      </span><br>
+                      <br>
+                        Als je inkomen niet altijd hetzelfde is kan het soms moeilijk zijn om een maandelijkse afdracht op tijd te doen. Dit kan betalingsproblematiek veroorzaken. Sparen is daarom belangrijk. Als buffer voor een tekort aan inkomen op zo’n gegeven moment. Door automatisch geld over te boeken naar een spaarrekening wordt het voor je gevoel een niet abonement. Het is slim om te proberen elke maand 10% van je inkomen zo naar een spaarrekening te sluizen.
+                        
+
+                    </p>
+                </div>
+                <div class="tips">
+                    <h3>Energie, Water & Elektriciteit</h3>
+                    <p class="tipsTekst">Energie en water zijn typische kosten die je altijd moet betalen. Vaak lijkt het daarom alsof je geen invloed hebt op deze kosten. Maar alleen <span>de kraan uit doen kan als 34 euro per jaar schelen.</span> De manier waarop je kookt kan zelfs de kosten drukken. Stomen of wokken in plaats van koken bespaart zo’n 3 euro per jaar. En <span>je koelkast 10 cm van de muur zetten kan ook al 15 euro schelen</span> op jaarbasis. Zo zijn er dus allerlei manieren om je energie en waterrekening te laten krimpen. Het scheelt je al om te douchen ten opzichte van baden, en <span>met een waterbesparende douchekop scheelt dit je bijna 52 euro per jaar.</span> En een minuut per keer korter douchen bespaart soms wel tot 25 euro voor elk uur dat je minder douched. Ook het vervangen van je lampen voor een beter label of LED lichten verkleint je energie gebruik. Of het afzetten van je televisie in plaats van hem op standby te zetten. Hiermee voorkom je sluipstroom. 
+<br><br><span class="quote">
+                        “Met de deksel op de pan koken, scheelt al 4 euro per jaar.”
+</span><br><br>
+                        Voor mensen met een koopwoning zijn er subsidieregelingen voor energiebesparende maatregelen waar je mogelijk veel maandlasten mee kunt besparen. Zoals het zetten van dubbel glas of betere isolatie.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <hr class="horizontalLineSmall">
+            <hr class="horizontalLine" id="lastHorizontalLine">
+            <h2>Toch nog hulp nodig?</h2>
+            <hr class="verticalLineLast">
+            <img src="./images/Huis/huis.png" id="huisFooter" alt="">
+            <div id="footer">
+
+            </div>
+        </div>
     </div>
 </body>
 

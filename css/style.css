@@ -34,11 +34,13 @@ width: 150px;
     height: 60%;
     overflow: hidden;
     background-size: cover;
-    background-color: #253B6C;
+    
+
+
 }
 img {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 header {
     display: flex;
@@ -367,8 +369,8 @@ hr {
 }
 
 #welkomTitel {
-    width: 919px;
-    height: 188px;
+    width: 100%;
+    height: 60%;
     margin-top: -25em;
     position: absolute;
 }
@@ -430,7 +432,7 @@ hr {
 #containerTips {
     width: 70%;
 margin-top: 10%;
-height: 105vh;
+height: 120vh;
 }
 
 .horizontalLine {
@@ -581,4 +583,60 @@ margin-top: -3%;
 }
 #vrijetijd {
     margin-top: 5%; 
+}
+.tips {
+    width: 450px;
+    /* flex: 1; */
+    min-height: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    white-space: normal;
+    
+}
+
+#containerTipsDiv {
+    overflow-y: hidden;
+    width: 3100px;
+    height: 650px;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    
+    display: flex;
+    
+}
+#containerTipsAll {
+    width: 1000px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.tipsTekst {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+   
+}
+
+.tipsTekst span {
+    
+    font-weight: bold;
+    
+}
+.quote {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.valueSlider {
+    padding-left: 225px;
+    position:absolute;
+    margin-top: -40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #01216A
+    
+    
 }
