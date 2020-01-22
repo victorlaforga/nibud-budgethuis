@@ -25,7 +25,8 @@ h3 {
     margin-top: 22%;
     font-size:20px;
     width: 50%;
-    text-align: justify;
+    text-align: left;
+    
 }
 header img {
 width: 150px;
@@ -449,7 +450,7 @@ height: 120vh;
 .verticalLine {
     color: #00B289;
     margin-left: 94.2%;
-    height: 831.5px;
+    height: 885px;
     margin-top: -48.55%;
     display: flex;
     position: absolute;
@@ -470,18 +471,18 @@ height: 120vh;
 }
 
 .verticalLineLeft {
-    height: 640px;
+    height: 680px;
     display: flex;
     position: absolute;
     margin-left: -13.31%;
     margin-top: 30.2px;
 }
 .verticalLineLeft:nth-child(1) {
-    height: 641px;
+    height: 692px;
 }
 .verticalLineLeft:nth-child(2) {
     margin-top: 63px;
-    height: 742.5px;
+    height: 800px;
 }
 
 #lastHorizontalLine {
@@ -598,6 +599,39 @@ margin-top: -3%;
     
 }
 
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  
+  margin-top: 250px;
+  box-shadow: inset 0 0 0 1px #01216A;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #01216A;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll {
+  0%
+    {opacity: 1}
+  100% {opacity: 0;
+        transform: translateY(46px)}
+}
 #containerTipsDiv {
     overflow-y: hidden;
     width: 3100px;
@@ -651,3 +685,4 @@ margin-top: -3%;
 #bon h3 {
     margin: 20px 10px 20px 10px;
 }
+
