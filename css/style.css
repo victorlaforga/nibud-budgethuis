@@ -448,7 +448,7 @@ height: 120vh;
 .verticalLine {
     color: #00B289;
     margin-left: 94.2%;
-    height: 883.5px;
+    height: 831.5px;
     margin-top: -48.55%;
     display: flex;
     position: absolute;
@@ -480,7 +480,7 @@ height: 120vh;
 }
 .verticalLineLeft:nth-child(2) {
     margin-top: 63px;
-    height: 801px;
+    height: 742.5px;
 }
 
 #lastHorizontalLine {
