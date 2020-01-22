@@ -22,15 +22,19 @@ slider2.oninput = function() {
   output2.innerHTML = this.value;
   voedingValueBon.innerHTML = this.value;
   if(this.value < 160) {
+    document.getElementById("voedingTips").style.display = "none";
     document.getElementById("koelkast").src="./images/meubeuls/meubels-28.png";
   }
   if(this.value > 161 && this.value < 321) {
+    document.getElementById("voedingTips").style.display = "none";
     document.getElementById("koelkast").src="./images/meubeuls/meubels-27.png";
   }
   if(this.value > 322 && this.value < 481) {
+    document.getElementById("voedingTips").style.display = "block";
     document.getElementById("koelkast").src="./images/meubeuls/meubels-26.png";
   }
   if(this.value > 482) {
+    document.getElementById("voedingTips").style.display = "block";
     document.getElementById("koelkast").src="./images/meubeuls/meubels-25.png";
   }
   
@@ -51,15 +55,19 @@ slider.oninput = function() {
   output.innerHTML = this.value;
   kledingValueBon.innerHTML = this.value;
   if(this.value < 41) {
+    document.getElementById("kledingTips").style.display = "none";
     document.getElementById("kledingkast").src="./images/meubeuls/meubels-20.png";
   }
   if(this.value > 42 && this.value < 83) {
+    document.getElementById("kledingTips").style.display = "none";
     document.getElementById("kledingkast").src="./images/meubeuls/meubels-19.png";
   }
   if(this.value > 84 && this.value < 124) {
+    document.getElementById("kledingTips").style.display = "block";
     document.getElementById("kledingkast").src="./images/meubeuls/meubels-18.png";
   }
   if(this.value > 125) {
+    document.getElementById("kledingTips").style.display = "block";
     document.getElementById("kledingkast").src="./images/meubeuls/meubels-17.png";
   }
 }
@@ -76,15 +84,19 @@ slider3.oninput = function() {
   output3.innerHTML = this.value;
   vervoerValueBon.innerHTML = this.value;
   if(this.value < 32) {
+    document.getElementById("vervoerTips").style.display = "none";
     document.getElementById("fiets").src="./images/meubeuls/meubels-01.png";
   }
   if(this.value > 33 && this.value < 64) {
+    document.getElementById("vervoerTips").style.display = "none";
     document.getElementById("fiets").src="./images/meubeuls/meubels-02.png";
   }
   if(this.value > 65 && this.value < 95) {
+    document.getElementById("vervoerTips").style.display = "block";
     document.getElementById("fiets").src="./images/meubeuls/meubels-03.png";
   }
   if(this.value > 96) {
+    document.getElementById("vervoerTips").style.display = "block";
     document.getElementById("fiets").src="./images/meubeuls/meubels-04.png";
   }
 }
@@ -102,15 +114,19 @@ slider4.oninput = function() {
   ewlValueBon.innerHTML = this.value;
 
   if(this.value < 123) {
+    document.getElementById("ewlTips").style.display = "none";
     document.getElementById("aanrecht").src="./images/meubeuls/meubels-09.png";
   }
   if(this.value > 124 && this.value < 247) {
+    document.getElementById("ewlTips").style.display = "none";
     document.getElementById("aanrecht").src="./images/meubeuls/meubels-08.png";
   }
   if(this.value > 248 && this.value < 370) {
+    document.getElementById("ewlTips").style.display = "block";
     document.getElementById("aanrecht").src="./images/meubeuls/meubels-07.png";
   }
   if(this.value > 371) {
+    document.getElementById("ewlTips").style.display = "block";
     document.getElementById("aanrecht").src="./images/meubeuls/meubels-05.png";
   }
 }
@@ -140,15 +156,19 @@ slider6.oninput = function() {
   output6.innerHTML = this.value;
   verzekeringValueBon.innerHTML = this.value;
   if(this.value < 129) {
+    document.getElementById("verzekeringTips").style.display = "none";
     document.getElementById("papieren").src="./images/meubeuls/meubels export deel 2-27.png";
   }
   if(this.value > 130 && this.value < 258) {
+    document.getElementById("verzekeringTips").style.display = "none";
     document.getElementById("papieren").src="./images/meubeuls/papieren.png";
   }
   if(this.value > 259 && this.value < 387) {
+    document.getElementById("verzekeringTips").style.display = "block";
     document.getElementById("papieren").src="./images/meubeuls/meubels export deel 2-29.png";
   }
   if(this.value > 388) {
+    document.getElementById("verzekeringTips").style.display = "block";
     document.getElementById("papieren").src="./images/meubeuls/meubels export deel 2-30.png";
   }
   

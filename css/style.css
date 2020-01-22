@@ -378,9 +378,9 @@ hr {
 #bon {
     height: 400px;
     width: 275px;
-    border: 2px solid gray;
+    border: 2px solid #01216A;
     border-radius: 5px;
-    margin-left: 101%;
+    margin-left: 102.5%;
 }
 
 .categorie {
@@ -448,7 +448,7 @@ height: 120vh;
 .verticalLine {
     color: #00B289;
     margin-left: 94.2%;
-    height: 833px;
+    height: 883.5px;
     margin-top: -48.55%;
     display: flex;
     position: absolute;
@@ -475,9 +475,12 @@ height: 120vh;
     margin-left: -13.31%;
     margin-top: 30.2px;
 }
-
+.verticalLineLeft:nth-child(1) {
+    height: 693px;
+}
 .verticalLineLeft:nth-child(2) {
     margin-top: 63px;
+    height: 801px;
 }
 
 #lastHorizontalLine {
@@ -586,7 +589,6 @@ margin-top: -3%;
 }
 .tips {
     width: 450px;
-    /* flex: 1; */
     min-height: 700px;
     margin-left: 20px;
     margin-right: 20px;
@@ -639,4 +641,12 @@ margin-top: -3%;
     color: #01216A
     
     
+}
+
+#containerTipsDiv div {
+    display: none;
+}
+
+#bon h3 {
+    margin: 20px 10px 20px 10px;
 }

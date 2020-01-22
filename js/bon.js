@@ -32,12 +32,22 @@ function calculateAll(){
 
         if(totaal > 0) {
                     totaalBon.style.color = "green";
-                    // totaalTitel.style.color = "green";
+                    totaalTitel.style.color = "green";
                 }
                 else {
                     totaalBon.style.color = "red";
-                    // totaalTitel.style.color = "red";
+                    totaalTitel.style.color = "red";
                 }
     
 }
 
+// ----------------------- SCROLL BUTTON -------------------?
+
+function scrollDown() {
+    
+        document.getElementById('containerHuis').scrollIntoView({
+            behavior: 'smooth'
+          });
+      
+  }
+  document.getElementById("submit").addEventListener("click", scrollDown)
