@@ -378,9 +378,10 @@ hr {
 #bon {
     height: 400px;
     width: 275px;
-    border: 2px solid #01216A;
+    border: 1px solid #01216A;
     border-radius: 5px;
     margin-left: 102.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .categorie {
