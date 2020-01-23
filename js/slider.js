@@ -8,6 +8,8 @@ alleBonnen.oninput = function() {
   totaalBon.innerHTML = this.value;
 
 }
+
+
 //------------------------- SLIDERS -----------------------------
 
 
@@ -210,15 +212,19 @@ slider8.oninput = function() {
   output8.innerHTML = this.value;
   if(this.value < 45) {
     document.getElementById("bier").src="./images/meubeuls/meubels export deel 2-34.png";
+    document.getElementById("vrijeTijdTips").style.display = "none";
   }
   if(this.value > 46 && this.value < 90) {
     document.getElementById("bier").src="./images/meubeuls/meubels export deel 2-33.png";
+    document.getElementById("vrijeTijdTips").style.display = "none";
   }
   if(this.value > 91 && this.value < 136) {
     document.getElementById("bier").src="./images/meubeuls/meubels export deel 2-32.png";
+    document.getElementById("vrijeTijdTips").style.display = "block";
   }
   if(this.value > 137) {
     document.getElementById("bier").src="./images/meubeuls/meubels export deel 2-31.png";
+    document.getElementById("vrijeTijdTips").style.display = "block";
   }
 };
 
@@ -235,15 +241,19 @@ slider9.oninput = function() {
   overigeValueBon.innerHTML = this.value;
   if(this.value < 45) {
     document.getElementById("kleed").src="./images/meubeuls/meubels-21.png";
+    document.getElementById("overigeTips").style.display = "none";
   }
   if(this.value > 46 && this.value < 90) {
     document.getElementById("kleed").src="./images/meubeuls/meubels-22.png";
+    document.getElementById("overigeTips").style.display = "none";
   }
   if(this.value > 91 && this.value < 136) {
     document.getElementById("kleed").src="./images/meubeuls/meubels-23.png";
+    document.getElementById("overigeTips").style.display = "block";
   }
   if(this.value > 137) {
     document.getElementById("kleed").src="./images/meubeuls/meubels-24.png";
+    document.getElementById("overigeTips").style.display = "block";
   }
 };
 
@@ -400,3 +410,10 @@ bonVervoer.style.fontWeight = "bold";
 vervoer.addEventListener("click", showInfoVervoer);
 bonVervoer.addEventListener("click", showInfoVervoer)
 
+
+function showDiv() {
+  if(kledingInfo.style.display = "inline-block") {
+      document.querySelectorAll(".info").style.display = "none";
+  }
+}
+showDiv();

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="module" src="js/hideDivs.js"></script>
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/slider.js"></script>
     <script type="module" src="js/bon.js"></script>
@@ -41,14 +42,14 @@
                 <div id="intro">
                     <p>Ik woon in een huishouden van
                         <input type="number" name="aantal"> volwassen(en) en met
-                        <input type="number" name="aantal"> kind(eren). Op dit moment ga ik
-                        <select name="" id="">
-                            <option value="Niet">Niet</option>
-                            <option value="Wel">Wel</option>
+                        <input type="number" name="aantal"> kind(eren). <br> Op dit moment ga ik
+                        <select class="select">
+                            <option class="dropdown" value="Niet">niet</option>
+                            <option class="dropdown" value="Wel">wel</option>
                         </select> naar school en betaal ik
-                        <select name="" id="">
-                            <option value="Geen">Geen</option>
-                            <option value="Wel">Wel</option>
+                        <select class="select">
+                            <option class="dropdown" value="Geen">geen</option>
+                            <option class="dropdown" value="Wel">wel</option>
                         </select> maandelijks bedrag voor onderwijs.
                         <br>
 
@@ -57,8 +58,8 @@
                 </div>
 
                 <div id="intro">
-                    <p>Samen hebben wij een totaal inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span> per maand. De huur van het huis bedraagt
-                        <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span> (denk hier aan alle soorten inkomen).
+                    <p>Samen hebben wij een totaal inkomen van <span class="currencyinput">€<input id="maandelijksinkomen" type="text" name="inkomen"></span> (denk hier aan alle soorten inkomen). per maand. De woonkosten van het huis bedragen
+                        <span class="currencyinput">€<input id="maandelijksekosten" type="text" name="huur"></span>
                         <br>
                         <button id="submit">Laten we naar binnen gaan!</button>
                     </p>
@@ -144,14 +145,11 @@
                     <h3>Verzekeringen</h3>
                     <span class="valueSlider" id="demo6"></span>
                     <p>Vul hier in wat je maandelijks kwijt ben aan je verzekeringen, denk hier aan Auto-, zorg-, Aansprakelijkheids-, mobiel-, inboedel- en uitvaartverzekering.</p>
-                    <div class="slidecontainer">
-                        <input type="range" min="0" max="513" value="0" class="slider" id="myRange6">
-                        <div class="averageDiv">
-                            <hr class="average" id="averageVerzekering" />
-                            <span>171</span>
-                        </div>
-                        
+                    <div id="verzekeringInput">
+                       <span id="euroVerzekering">€</span> <input id="myRange6" class="inputV" type="text">
+                      <p>(alle verzekeringen)</p>
                     </div>
+                   
                 </div>
                 <div class="info" id="abbonementen">
                     <h3>Abbonementen</h3>
@@ -281,7 +279,9 @@
 <div id="containerTipsAll">
             <div id="containerTipsDiv">
                 <div class="tips" id="kledingTips">
-                    <h3>Kleding</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels-19.png" alt=""> <h3>Overige</h3>
+                       </div>
                     <p class="tipsTekst">Kleding is een van de leukste dingen om geld aan uit te geven. Dit kan soms in de rode cijfers lopen.Door automatisch geld over te laten boeken naar een spaarrekening na het storten van je loon kun je jezelf aanleren <span>eerst geld opzij te zetten voordat je er kleding van koopt.</span> Zo kun je ook nog wat langer nadenken of je het product echt wil hebben. Of in plaats van iets nieuws te kopen zou je eens kunnen snuffelen voor <span>goede tweedehands en vintage items.</span> Dit bespaart geld, is beter voor het milieu én je vind er vaak hippe en degelijke spullen. Ook is het aan te raden om de <span>kortingen in het jaar bij jouw favoriete winkels</span> in de gaten te houden. Hier kun je veel geld mee besparen.
                         <br>
                         <br>
@@ -291,7 +291,9 @@
                         <br> Heb je geen geld voor kleding maar toch een nieuwe outfit nodig? Dan is de kledingbank er voor je om een nieuw paar kleren te ontvangen. Of kijk op facebook, hier vind je soms gratis of goedkope kleding die iemand in je buurt kwijt wil.</p>
                 </div>
                 <div class="tips" id="voedingTips">
-                    <h3>Voeding</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels-27.png" alt=""> <h3>Voeding</h3>
+                       </div>
                     <p class="tipsTekst">Voeding is een belangrijk bron is ons leven en het is niet gek dat je hier veel geld aan kwijt bent. Eten wordt vaak geassocieerd met gezelligheid. Lekker op een terrasje zitten of uit eten, maar daar zijn ook andere goedkopere vervangingen voor. Ga in plaats van op een terrasje zitten <span> naar het park en neem zelf een drankje mee.</span> Of kook samen thuis in plaats van uit eten. Wat goed kan werken, vooral als je kinderen hebt, is om elke week <span> een planning te maken van je maaltijden per week.</span> Dit voorkomt meerdere keren naar de supermarkt gaan en met extra dingen thuis te komen die eigenlijk niet nodig zijn.
                        
                         <br>
@@ -304,7 +306,9 @@
                     </p>
                 </div>
                 <div class="tips" id="vervoerTips">
-                    <h3>Vervoer</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels-02.png" alt=""> <h3>Vervoer</h3>
+                       </div>
                     <p class="tipsTekst">Van A naar B komen kan tegenwoordig op talloze manieren. De één gaat met de fiets naar werk en de ander met het OV. De meest voordeligste manier om jezelf te verplaatsen is natuurlijk om te lopen of te fietsen, kijk of je kleinere afstanden kan wandelen. Woon je in de stad ? Gebruik de fiets. Moet je toch langere afstanden afleggen naar werk bijvoorbeeld, bespreek met je werk of zij eventueel mee willen betalen aan OV. Als je uiteindelijk toch de auto moet pakken, zoek uit waar je het goedkoopst kan tanken en bespaar op lange termijn veel geld.
 
                     
@@ -317,7 +321,9 @@
                     </p>
                 </div>
                 <div class="tips" id="verzekeringTips">
-                    <h3>Verzekering</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/papieren.png" alt=""> <h3>Verzekering</h3>
+                       </div>
                     <p class="tipsTekst">Een verzekering geeft een gevoel van veiligheid. Of het gaat om je zorg, inboedel of aansprakelijkheidsverzekering. Je betaald hier maandelijks geld aan voor het geval dat een situatie zich voordoet waar je niet in wil belanden. Daarom is het soms aantrekkelijk het zekere voor het onzekere te nemen, maar dit is niet altijd slim. Hier verlies je namelijk veel inkomen aan. Het is daarom slim om te <span>checken of je wel alle dekking waar je voor betaald écht nodig hebt.</span> Ben je niet te ruim verzekerd, bijvoorbeeld door een reisverzekering naast een reisverzekering in je zorgpakket. <span>Of omdat je dubbel verzekerd bent voor inboedel, auto of rechtsbijstand.</span> 
                       <br>
                         <br>
@@ -330,7 +336,9 @@
                     </p>
                 </div>
                 <div class="tips" id="contributieTips">
-                    <h3>Contributies</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels-13.png" alt=""> <h3>Contributies</h3>
+                       </div>
                     <p class="tipsTekst">We hebben allemaal kosten aan een lidmaatschap of abonnement. Naast je andere vaste lasten is het soms lastig om goed overzicht te hebben over waar je allemaal geld aan uitgeeft. Het is belangrijk hierop overzicht te hebben. Check of je abonnementen op maandprijs. Wordt deze ergens nog goedkoper aangeboden? Is je prijs competitief? En heb je al deze contributies of pakketten écht nodig? Kun je het doel ervan misschien op een andere of goedkopere manier behalen.
                         <br>
                         <br><span class="quote">
@@ -343,7 +351,9 @@
                     </p>
                 </div>
                 <div class="tips" id="ewlTips">
-                    <h3>Energie, Water & Elektriciteit</h3>
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels-08.png" alt=""> <h3>E+W+L</h3>
+                       </div>
                     <p class="tipsTekst">Energie en water zijn typische kosten die je altijd moet betalen. Vaak lijkt het daarom alsof je geen invloed hebt op deze kosten. Maar alleen <span>de kraan uit doen kan als 34 euro per jaar schelen.</span> De manier waarop je kookt kan zelfs de kosten drukken. Stomen of wokken in plaats van koken bespaart zo’n 3 euro per jaar. En <span>je koelkast 10 cm van de muur zetten kan ook al 15 euro schelen</span> op jaarbasis. Zo zijn er dus allerlei manieren om je energie en waterrekening te laten krimpen. Het scheelt je al om te douchen ten opzichte van baden, en <span>met een waterbesparende douchekop scheelt dit je bijna 52 euro per jaar.</span> En een minuut per keer korter douchen bespaart soms wel tot 25 euro voor elk uur dat je minder douched. Ook het vervangen van je lampen voor een beter label of LED lichten verkleint je energie gebruik. Of het afzetten van je televisie in plaats van hem op standby te zetten. Hiermee voorkom je sluipstroom. 
 <br><br><span class="quote">
                         “Met de deksel op de pan koken, scheelt al 4 euro per jaar.”
@@ -351,14 +361,52 @@
                         Voor mensen met een koopwoning zijn er subsidieregelingen voor energiebesparende maatregelen waar je mogelijk veel maandlasten mee kunt besparen. Zoals het zetten van dubbel glas of betere isolatie.
                     </p>
                 </div>
+                <div class="tips" id="overigeTips">
+                  <div id="imgTitel">
+                   <img class="imgTips" src="./images/meubeuls/meubels-22.png" alt=""> <h3>Overige</h3>
+                  </div>
+                    <p class="tipsTekst">Overige kosten kunnen ongemerkt weg lekken bij de rest van de kosten. Dit kunnen kleine terugkerende uitgaven zijn, denk aan de dagelijkse lunch op werk of de zak drop bij het station. Het effect van het ongemerkt weglekken van geld wordt de Latte-factor genoemd. Met de 4 vuistregels van het Nibud kan je dit voorkomen: <br>
+                        1. <span>Check</span> wekelijks uw saldo en uitgaven.<br>
+                        2. <span>Plan</span> jaarlijks uw inkomsten en uitgaven.<br>
+                        3. <span>Spaar</span> maandelijks 10 procent van uw inkomen.<br>
+                        4. <span>Bewaar</span> uw financiële administratie op een geordende manier.
+                        <br><br> <span class="quote">“Denk er twee keer over na als je iets wilt kopen”</span> <br> <br>
+                    </p>
+                </div>
+                <div class="tips" id="vrijeTijdTips">
+                    <div id="imgTitel">
+                        <img class="imgTips" src="./images/meubeuls/meubels export deel 2-33.png" alt=""> <h3>Vrije tijd</h3>
+                       </div>
+                    <p class="tipsTekst">Een dagje uit met de kinderen of vrienden is altijd gezellig, maar kan het niet goedkoper. In Nederland zijn genoeg dingen te doen zoals pretparken, dierentuinen of naar de film.<span>Bekijk het aanbod en kies er eentje uit die in je budget past.</span> Dit voorkomt duurder uit te zijn terwijl het ergens anders goedkoper kan zijn. Het kan ook zijn dat de reis bijvoorbeeld goedkoper is als de desbetreffende locatie dichtbij is. Daarnaast kan het thuis ook gezellig zijn. Is het buiten lekker weer en wil je op het terras een bier of wijntje doen? 
+                    <br><br><span class="quote">“Ga in plaats van naar een terras naar het park en neem zelf wat drank en hapjes mee.”</span><br><br>
+                  <span>Neem zelf eten mee of maken allemaal hapjes,</span>  dit scheelt onverwachte kosten op de desbetreffende locatie. Ga ervan uit dat er onverwachte kosten kunnen bijkomen zoals betalen voor de wc, niet genoeg eten of drank mee.
+                    </p>
+                </div>
             </div>
           </div>
         </div>
-        <div class="container">
+        <div id="lastContainer">
             <hr class="horizontalLineSmall">
             <hr class="horizontalLine" id="lastHorizontalLine">
             <h2>Toch nog hulp nodig?</h2>
             <hr class="verticalLineLast">
+            <div id="lastPage">
+<div id="tekstLastPage">
+  <p>Gaat het nog niet lukken om aan het eind van de maand geld over te houden. Maak gratis gebruik van schuldhulpmaatje.nl ga hier samen aan de slag om de problematiek op te lossen zonder oordelen. <br> <br>
+      Of gebruik de e-mailcoaching van nibud en maak een jaarplanning om te kijken hoe je gaat budgeteren. Ontvang op slimmem momenten een mail met informatie, een tool of een reminder.<br> <br>
+      Vul hier je mail in en ontvang gratis een boekje waarmee je jou jaarbegroting kan maken en overzicht kan krijgen van jaar.</p>
+      <input type="text" placeholder="voorbeeld@hotmail.nl" id="inputEmail">
+</div>
+<div id="buttonsLastPage">
+  <form target="_blank" action="https://www.nibud.nl/consumenten/nibud-jaarplanner-e-mailcoaching/">
+  <button class="buttonLastPage" id="nibudButton">Ga naar Nibud e-mail coaching</button>
+</form>
+<form target="_blank" action="https://schuldhulpmaatje.nl/">
+  <button class="buttonLastPage" id="schuldhulpButton">Ga naar Schuldhulpmaatje</button>
+</form>
+</div>
+            </div>
+
             <img src="./images/Huis/huis.png" id="huisFooter" alt="">
             <div id="footer">
 

@@ -35,9 +35,10 @@ width: 150px;
     height: 60%;
     overflow: hidden;
     background-size: cover;
-    
-
-
+    animation-iteration-count: 1;
+}
+.image img {
+    animation-iteration-count: 1;
 }
 img {
     width: 100%;
@@ -129,7 +130,7 @@ margin-bottom: 5%;
 }
 
 .intro p {
-    text-align: justify;
+    text-align: left;
    
 }
 
@@ -192,6 +193,16 @@ hr {
     
   }
   
+  #dropdown option {
+      background: white;
+      
+  }
+  .select {
+      background-color: white;
+      font-size: 15px;
+      width: 70px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   /* The slider itself */
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -261,8 +272,9 @@ hr {
 
   }
 #introHuis {
-    width: 42%;
-    text-align: justify;
+    width: 50%;
+    text-align: left;
+    /* margin-bottom: 100px; */
 }
   #test {
       margin-left: 650px;
@@ -451,7 +463,7 @@ height: 120vh;
     color: #00B289;
     margin-left: 94.2%;
     height: 885px;
-    margin-top: -48.55%;
+    margin-top: -47%;
     display: flex;
     position: absolute;
     border-color: #00B289;
@@ -492,8 +504,8 @@ height: 120vh;
 .verticalLineLast {
     color: #00B289;
    margin-left: 82.2%;
-    height: 750px;
-   margin-top: -49px;
+    height: 460px;
+   margin-top: -47px;
     display: flex;
     position: absolute;
     border-color: #00B289;
@@ -506,11 +518,11 @@ height: 120vh;
     position: absolute;
     display: block;
     margin-left: -15%;
-    margin-top: 50%;
+    margin-top: 10%;
 }
 
 #huisFooter {
-    margin-top: 39%;
+    margin-top: -1%;
     width: 375px;
     height: auto;
     margin-left: 45%;
@@ -603,13 +615,13 @@ margin-top: -3%;
 .icon-scroll:before {
   position: absolute;
   left: 50%;
+  height: 50px;
 }
 .icon-scroll {
-  width: 40px;
-  height: 70px;
+  width: 30px;
+  height: 50px;
   margin-left: -20px;
   top: 50%;
-  
   margin-top: 250px;
   box-shadow: inset 0 0 0 1px #01216A;
   border-radius: 25px;
@@ -630,7 +642,7 @@ margin-top: -3%;
   0%
     {opacity: 1}
   100% {opacity: 0;
-        transform: translateY(46px)}
+        transform: translateY(30px)}
 }
 #containerTipsDiv {
     overflow-y: hidden;
@@ -644,7 +656,7 @@ margin-top: -3%;
     
 }
 #containerTipsAll {
-    width: 1000px;
+    width: 1050px;
     overflow-y: hidden;
     overflow-x: scroll;
 }
@@ -678,7 +690,7 @@ margin-top: -3%;
     
 }
 
-#containerTipsDiv div {
+#containerTipsDiv .tips {
     display: none;
 }
 
@@ -686,3 +698,95 @@ margin-top: -3%;
     margin: 20px 10px 20px 10px;
 }
 
+.imgTips {
+    width: auto;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#imgTitel {
+    display: flex;
+    margin-bottom: -10px;
+}
+
+input.inputV {
+    width: 60px;
+    margin: 10px 25px 0px 25px;
+    border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  color: white;
+}
+#verzekeringInput {
+    display: flex;
+    background-color: #01216A;
+    border-radius: 20px;
+    padding: 1px 1px 7px 1px;
+
+}
+
+#verzekeringInput p {
+    font-size: 10px;
+    color: white;
+    margin: 22px 0px 0px -10px ;
+}
+#euroVerzekering {
+    color: white;
+    margin: 7px -20px 0px 20px;
+    font-size: 27px;
+}
+
+#tekstLastPage {
+width: 50%;
+margin-right: 15px;
+}
+#buttonsLastPage {
+    width: 50%;
+    margin-left: 15px;
+}
+
+#lastPage {
+    display: flex;
+}
+.buttonLastPage {
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    margin-top: 25px;
+}
+#nibudButton {
+    background-color: #01216A;
+    margin-bottom: 30px;
+}
+
+#schuldhulpButton {
+    background-color: #00B289;
+}
+
+#lastContainer {
+    height: 30vh;
+    width: 70%;
+    margin-top: -64px;
+}
+
+#lastContainer h2 {
+    font-size: 40px;
+}
+
+#inputEmail {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #01216A;
+}
+
+::placeholder {
+    font-weight: lighter;
+}
