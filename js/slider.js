@@ -411,3 +411,119 @@ vervoer.addEventListener("click", showInfoVervoer);
 bonVervoer.addEventListener("click", showInfoVervoer)
 
 
+function closeVervoer() {
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+vervoer.addEventListener("click", closeVervoer);
+
+function closeKleding() {
+  vervoerInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+kledingkast.addEventListener("click", closeKleding);
+
+function closeEwl() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+ewl.addEventListener("click", closeEwl);
+
+function closeOnderwijs() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+onderwijs.addEventListener("click", closeOnderwijs);
+
+function closeVrijeTijd() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+vrijeTijd.addEventListener("click", closeVrijeTijd);
+
+function closeOverige() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+overige.addEventListener("click", closeOverige);
+
+function closeAbbo() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+abbonementen.addEventListener("click", closeAbbo);
+
+function closeVerzekering() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  voedingInfo.style.display = "none";
+}
+
+verzekeringen.addEventListener("click", closeVerzekering);
+
+function closeVoeding() {
+  vervoerInfo.style.display = "none";
+  kledingInfo.style.display = "none";
+  ewlInfo.style.display = "none";
+  onderwijsInfo.style.display = "none";
+  vrijeTijdInfo.style.display = "none";
+  overigeInfo.style.display = "none";
+  abbonementenInfo.style.display = "none";
+  verzekeringenInfo.style.display = "none";
+}
+
+voeding.addEventListener("click", closeVoeding);
+
