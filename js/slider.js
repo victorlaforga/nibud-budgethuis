@@ -411,9 +411,3 @@ vervoer.addEventListener("click", showInfoVervoer);
 bonVervoer.addEventListener("click", showInfoVervoer)
 
 
-function showDiv() {
-  if(kledingInfo.style.display = "inline-block") {
-      document.querySelectorAll(".info").style.display = "none";
-  }
-}
-showDiv();

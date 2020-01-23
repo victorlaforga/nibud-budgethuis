@@ -57,9 +57,9 @@ header {
    margin: -10px;
 
 }
-/* #containerHuis {
-    width: 85%;
-} */
+#containerHuis {
+    height: 90vh;
+}
 .container {
     width: 70%;
     margin-top: -64px;
@@ -264,9 +264,9 @@ hr {
   #house {
     background-image: url(../images/meubeuls/meubels-30.png);
     background-repeat: no-repeat;
-      width: 98%;
+      width: 76%;
       height: 85%;
-      margin-left: -17%;
+      margin-left: -8%;
       margin-top: 8%;
       background-size: contain;
 
@@ -303,53 +303,49 @@ hr {
 
 #kledingkast {
     width: auto;
-    margin-left: 27%;
-    margin-top: -6.7%;
-    height: 260px;
+    margin-left: 22.5%;
+    margin-top: -4.5%;
+    height: 180px;
    
 }
 
 #koelkast {
     width: auto;
-    margin-right: 45%;
-    margin-top: 9.5%;
-    height: 245px;
-    margin-left: 1.5%;
+    margin-right: 40%;
+    margin-top: 6.5%;
+    height: 200px;
+    margin-left: 1%;
+    
     
    
 }
 
 #aanrecht {
-    width: 165px;
-    margin-left: 12%;
+    width: 115px;
+    margin-left: 10%;
     height: auto;
-    margin-top: 10.5%;
+    margin-top: 8.5%;
 }
 
 #kleed {
-    width: 275px;
+    width: 200px;
     height: auto;
-   margin-left: 25.5%;
-   margin-top: 15%;
+   margin-left: 20.5%;
+   margin-top: 12%;
 }
 
 #laptop {
-    width: 50px;
-    height: auto;
-    margin-left: 22%;
-    margin-top: 21%;
-}
-#cigaretten {
-    width: 25px;
+    width: 40px;
     height: auto;
     margin-left: 17%;
-    margin-top: 25%;
+    margin-top: 16.5%;
 }
+
 #fiets {
     width: auto;
-    height: 150px;
-    margin-left: 45%;
-   margin-top: 23%;
+    height: 110px;
+    margin-left: 35%;
+   margin-top: 18.5%;
 
 }
 .objecten {
@@ -360,13 +356,14 @@ hr {
 }
 
 #kleding {
-    margin-left: 40%;
+    margin-left: 33%;
+    margin-top: -5%;
     
 }
 
 #vervoer {
-    margin-left: 20%;
-    margin-top: 20%;
+    margin-left: 12%;
+    margin-top: 15%;
 }
 #voeding {
     margin-left: 10%;
@@ -393,7 +390,7 @@ hr {
     width: 275px;
     border: 1px solid #01216A;
     border-radius: 5px;
-    margin-left: 102.5%;
+    margin-left: 112%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
@@ -461,8 +458,8 @@ height: 120vh;
 }
 .verticalLine {
     color: #00B289;
-    margin-left: 94.2%;
-    height: 885px;
+    margin-left: 88%;
+    height: 777px;
     margin-top: -47%;
     display: flex;
     position: absolute;
@@ -531,49 +528,50 @@ height: 120vh;
 
 #ewl {
     margin-top: -8%;
-    margin-left: 5%;
+    margin-left: -8%;
 }
 
 #bier {
-    width: 40px;
+    width: 30px;
     height: auto;
-    margin-left: 17%;
-    margin-top: 23%;
+    margin-left: 13.7%;
+    margin-top: 18%;
 }
 
 #certificaat {
-    width: 40px;
+    width: 30px;
     height: auto;
-    margin-left: 55%;
-    margin-top: -4%;
+    margin-left: 42.5%;
+    margin-top: -3%;
 }
 
 #papieren {
-    width: 60px;
+    width: 45px;
     height: auto;
-    margin-left: 55%;
-    margin-top: 15%;
+    margin-left: 42.5%;
+    margin-top: 11.5%;
 }
 
 #onderwijs {
-    margin-left: 45%;
+    margin-left: 30%;
     margin-top: 3%;
 }
 
 #verzekeringen {
 
-margin-left: 45%;
-margin-top: -3%;
+margin-left: 20%;
+margin-top: -5%;
 
 }
 
 #abbonementen {
-    margin-left: 13%;
+    margin-left: 22%;
     margin-top: 3%;
 }
 
 #overige {
-    margin-left: 4%;
+    margin-left: 2%;
+    margin-top: -4%;
 }
 
 .average {
@@ -599,7 +597,7 @@ margin-top: -3%;
     margin-left: -2.2%;
 }
 #vrijetijd {
-    margin-top: 5%; 
+    margin-top: -1%; 
 }
 .tips {
     width: 450px;
@@ -789,4 +787,11 @@ margin-right: 15px;
 
 ::placeholder {
     font-weight: lighter;
+}
+
+#closeTabs {
+    margin-left: 50%;
+    margin-top: -7%;
+    position: absolute;
+    padding: 10px;
 }
