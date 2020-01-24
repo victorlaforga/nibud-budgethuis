@@ -189,15 +189,19 @@ slider7.oninput = function() {
   abbonementenValueBon.innerHTML = this.value;
   if(this.value < 60) {
     document.getElementById("laptop").src="./images/meubeuls/meubels-11.png";
+    document.getElementById("contributieTips").style.display = "none";
   }
   if(this.value > 61 && this.value < 120) {
     document.getElementById("laptop").src="./images/meubeuls/meubels-13.png";
+    document.getElementById("contributieTips").style.display = "none";
   }
   if(this.value > 121 && this.value < 181) {
     document.getElementById("laptop").src="./images/meubeuls/meubels-14.png";
+    document.getElementById("contributieTips").style.display = "block";
   }
   if(this.value > 182) {
     document.getElementById("laptop").src="./images/meubeuls/meubels-16.png";
+    document.getElementById("contributieTips").style.display = "block";
   }
 };
 
